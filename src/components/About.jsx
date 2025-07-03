@@ -54,7 +54,7 @@ export default function About() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <FaHeart className="text-4xl text-teal-400 mb-2" />
-                <p className="text-white font-medium">1000+ Happy Clients</p>
+                <p className="text-white font-medium">500+ Happy Clients</p>
               </div>
             </div>
           </motion.div>

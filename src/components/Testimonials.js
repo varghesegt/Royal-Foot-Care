@@ -77,7 +77,7 @@ export default function Testimonials() {
 
           <div className="flex items-center gap-2 text-teal-400">
             <FaUsers className="text-2xl" />
-            <span className="text-xl font-semibold">250+ Happy Clients</span>
+            <span className="text-xl font-semibold">500+ Happy Clients</span>
           </div>
         </motion.div>
 
