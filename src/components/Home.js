@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const slides = [
   {
@@ -34,6 +35,23 @@ export default function Home() {
       id="home"
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-black"
     >
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Royal Foot Care | Foot Reflexology & Massage in Trichy</title>
+        <meta
+          name="description"
+          content="Experience the best foot reflexology, massage, and pedicure treatments in Tiruchirappalli. Relax, heal, and rejuvenate naturally with Royal Foot Care."
+        />
+        <meta name="keywords" content="foot reflexology, foot massage, pedicure, royal foot care, trichy wellness, foot spa tiruchirappalli, relaxation therapy" />
+        <meta name="author" content="Royal Foot Care" />
+        <meta property="og:title" content="Royal Foot Care | Foot Reflexology & Massage in Trichy" />
+        <meta property="og:description" content="Best foot care and wellness center in Tiruchirappalli offering reflexology, massage, and pedicure services." />
+        <meta property="og:image" content="https://royalfootcare.in/img1.webp" />
+        <meta property="og:url" content="https://royalfootcare.in" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://royalfootcare.in/" />
+      </Helmet>
+
       {/* Background Slideshow with Text Overlay */}
       <div className="absolute inset-0 z-0">
         {slides.map((slide, idx) => (
