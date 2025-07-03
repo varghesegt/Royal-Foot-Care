@@ -3,17 +3,17 @@ import { motion } from 'framer-motion';
 
 const slides = [
   {
-    src: '/img1.jpg',
+    src: '/img1.webp',
     title: 'Foot Reflexology',
     description: 'Activate natural healing through pressure points for stress relief and better wellness.'
   },
   {
-    src: '/img3.jpg',
+    src: '/img3.webp',
     title: 'Foot Massage',
     description: 'Relax tired feet and restore circulation with our expert therapeutic foot massage.'
   },
   {
-    src: '/img11.png',
+    src: '/img11.webp',
     title: 'Pedicure',
     description: 'Cleanse, exfoliate, and moisturize with our rejuvenating pedicure treatments.'
   },
@@ -46,8 +46,11 @@ export default function Home() {
             <img
               src={slide.src}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              loading={idx === current ? 'eager' : 'lazy'}
+              className="w-full h-full object-cover object-center opacity-0 transition-opacity duration-700 ease-in-out"
+              onLoad={(e) => e.currentTarget.classList.add('opacity-100')}
             />
+
             <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
               <motion.h2
                 className="text-4xl md:text-5xl font-bold text-white mb-4"
