@@ -1,3 +1,19 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for Royal Foot Care
+# Allow all search engines to crawl everything
 User-agent: *
 Disallow:
+
+# Sitemap location
+Sitemap: https://royalfootcare.in/sitemap.xml
+
+# Google-specific directives
+User-agent: Googlebot
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow:
+
+# Prevent crawling unnecessary files (optional)
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /README.md
