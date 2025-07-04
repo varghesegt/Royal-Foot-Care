@@ -29,32 +29,26 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000); // slightly longer display time
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
-      {/* 🔍 SEO Meta Tags */}
+      {/* SEO Meta Tags */}
       <Title>Foot Reflexology Trichy | Best Foot Massage, Pedicure & Spa – Royal Foot Care</Title>
-      <Meta
-        name="description"
-        content="Top-rated foot reflexology and foot massage center in Trichy. We offer therapeutic pedicures and spa services to relieve stress and promote wellness." />
-      <Meta
-        name="keywords"
-        content="foot reflexology Trichy, foot massage Trichy, pedicure Trichy, women foot spa Trichy, foot therapy Tiruchirappalli, Royal Foot Care" />
+      <Meta name="description" content="Top-rated foot reflexology and foot massage center in Trichy. We offer therapeutic pedicures and spa services to relieve stress and promote wellness." />
+      <Meta name="keywords" content="foot reflexology Trichy, foot massage Trichy, pedicure Trichy, women foot spa Trichy, foot therapy Tiruchirappalli, Royal Foot Care" />
       <Meta name="author" content="Royal Foot Care" />
       <Meta property="og:title" content="Foot Reflexology & Pedicure Spa in Trichy | Royal Foot Care" />
-      <Meta
-        property="og:description"
-        content="Certified therapists offering the best foot reflexology, therapeutic massage, and pedicure services in Trichy. Book now for stress relief and wellness." />
+      <Meta property="og:description" content="Certified therapists offering the best foot reflexology, therapeutic massage, and pedicure services in Trichy. Book now for stress relief and wellness." />
       <Meta property="og:image" content="https://royalfootcare.in/img3.webp" />
       <Meta property="og:url" content="https://royalfootcare.in" />
       <Meta name="twitter:card" content="summary_large_image" />
       <HeadLink rel="canonical" href="https://royalfootcare.in/" />
       <HeadLink rel="preload" as="image" href="/img3.webp" />
 
-      {/* 🧠 JSON-LD Structured Data */}
+      {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({
           '@context': 'https://schema.org',
@@ -76,28 +70,25 @@ export default function Home() {
         })}
       </script>
 
-      {/* 🖼 Hero Slideshow */}
+      {/* Hero Slideshow */}
       <main>
-        <section
-          id="home"
-          className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-black"
-        >
+        <section id="home" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-black">
           <div className="absolute inset-0 z-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1 }}
+                initial={{ opacity: 0, scale: 1.05 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.8 }}
                 className="absolute inset-0 w-full h-full"
               >
                 <img
                   src={slides[current].src}
                   alt={`${slides[current].title} | Royal Foot Care Trichy`}
-                  loading={current === 0 ? 'eager' : 'lazy'}
+                  loading="lazy"
                   decoding="async"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-center transition-opacity duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
                   <motion.h1
