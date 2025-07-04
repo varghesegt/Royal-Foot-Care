@@ -10,27 +10,27 @@ import Benefits from './components/Benefits';
 import Plans from './components/Plans';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
-import Footer from './components/Footer'; // ✅ Make sure this is latest
+import Footer from './components/Footer';
 
 // Floating UI
 import ContactStickyButton from './components/ContactStickyButton';
-import ScrollToTopButton from './components/ScrollToTopButton';
+import ScrollToTopButton from './components/ScrollToTopButton'; // ✅ Scroll to top
 
 function App() {
   return (
     <div className="bg-[#0e0e0e] text-white font-sans scroll-smooth">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Royal Foot Care | Foot Reflexology & Wellness in Trichy</title>
+        <title>Royal Foot Care | Foot Reflexology & Wellness in Ahmedabad</title>
         <meta
           name="description"
-          content="Royal Foot Care offers expert foot reflexology, therapeutic pedicure, and stress relief in Trichy. Experience certified wellness by professionals."
+          content="Royal Foot Care offers expert foot reflexology, pedicure, and wellness services in Ahmedabad. Experience holistic healing with certified therapists."
         />
         <meta
           name="keywords"
-          content="foot reflexology Trichy, foot massage Melapudur, therapeutic pedicure, Royal Foot Care, women's wellness spa, Tiruchirappalli"
+          content="foot reflexology, foot care, wellness spa, Ahmedabad spa, pedicure, stress relief, Royal Foot Care"
         />
-        <meta name="author" content="Royal Foot Care Foot Reflexology" />
+        <meta name="author" content="Royal Foot Care" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
 
@@ -42,21 +42,27 @@ function App() {
         <section id="home">
           <Home />
         </section>
+
         <section id="about">
           <About />
         </section>
+
         <section id="services">
           <Services />
         </section>
+
         <section id="benefits">
           <Benefits />
         </section>
+
         <section id="pricing">
           <Plans />
         </section>
+
         <section id="testimonials">
           <Testimonials />
         </section>
+
         <section id="contact">
           <Contact />
         </section>
@@ -66,7 +72,7 @@ function App() {
       <ContactStickyButton />
       <ScrollToTopButton />
 
-      {/* ✅ Updated Footer SEO - Confirm Latest Footer Content is Loaded */}
+      {/* Footer */}
       <Footer />
     </div>
   );
