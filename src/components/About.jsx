@@ -78,7 +78,7 @@ export default function About() {
             Why Royal Foot Care Is Trichy’s Trusted Reflexology Choice
           </h3>
           <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
-            Whether you're dealing with daily stress, body fatigue, hormonal imbalance, or chronic foot pain — our **reflexology therapies** are designed to help. We offer personalized sessions with professional care at our peaceful location in **Melapudur, Trichy**. Discover the difference holistic care can make. Book your session now.
+            Whether you're dealing with daily stress, body fatigue, hormonal imbalance, or chronic foot pain — our reflexology therapies are designed to help. We offer personalized sessions with professional care at our peaceful location in Melapudur, Trichy. Discover the difference holistic care can make. Book your session now.
           </p>
         </motion.div>
       </div>
