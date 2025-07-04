@@ -11,13 +11,13 @@ const slides = [
   },
   {
     src: '/img1.webp',
-    title: 'Therapeutic Foot Massage',
+    title: 'Therapeutic Foot Massage in Trichy',
     description:
-      'Relax and heal with expert foot massage therapy—improves blood flow, relieves pain, and refreshes your body.',
+      'Relax and heal with expert foot massage therapy in Trichy — improves blood flow, relieves pain, and refreshes your body.',
   },
   {
     src: '/img11.webp',
-    title: 'Professional Pedicure Treatments',
+    title: 'Pedicure Spa for Women in Trichy',
     description:
       'Rejuvenate your feet with cleansing, exfoliation, and moisturizing pedicure services at Royal Foot Care, Trichy.',
   },
@@ -36,21 +36,18 @@ export default function Home() {
   return (
     <>
       {/* 🔍 SEO Meta Tags */}
-      <Title>Royal Foot Care | Best Foot Reflexology & Massage in Trichy</Title>
+      <Title>Foot Reflexology Trichy | Best Foot Massage, Pedicure & Spa – Royal Foot Care</Title>
       <Meta
         name="description"
-        content="Top-rated foot reflexology, massage, and pedicure center in Trichy. Relieve stress and improve wellness naturally at Royal Foot Care."
-      />
+        content="Top-rated foot reflexology and foot massage center in Trichy. We offer therapeutic pedicures and spa services to relieve stress and promote wellness." />
       <Meta
         name="keywords"
-        content="foot reflexology Trichy, best foot massage in Trichy, pedicure spa Trichy, Royal Foot Care, wellness center, foot therapy"
-      />
+        content="foot reflexology Trichy, foot massage Trichy, pedicure Trichy, women foot spa Trichy, foot therapy Tiruchirappalli, Royal Foot Care" />
       <Meta name="author" content="Royal Foot Care" />
-      <Meta property="og:title" content="Royal Foot Care | Foot Reflexology & Massage in Trichy" />
+      <Meta property="og:title" content="Foot Reflexology & Pedicure Spa in Trichy | Royal Foot Care" />
       <Meta
         property="og:description"
-        content="Experience foot reflexology, massage, and pedicure from certified therapists in Trichy. Book your wellness session today!"
-      />
+        content="Certified therapists offering the best foot reflexology, therapeutic massage, and pedicure services in Trichy. Book now for stress relief and wellness." />
       <Meta property="og:image" content="https://royalfootcare.in/img3.webp" />
       <Meta property="og:url" content="https://royalfootcare.in" />
       <Meta name="twitter:card" content="summary_large_image" />
