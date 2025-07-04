@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://royalfootcare.in/</loc>
+    <lastmod>2025-07-03</lastmod>
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalfootcare.in/" />
+  </url>
+
+  <!-- Services Page (Ideally use route like /services) -->
+  <url>
+    <loc>https://royalfootcare.in/services</loc>
+    <lastmod>2025-07-03</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalfootcare.in/services" />
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://royalfootcare.in/about</loc>
+    <lastmod>2025-07-03</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalfootcare.in/about" />
+  </url>
+
+  <!-- Testimonials -->
+  <url>
+    <loc>https://royalfootcare.in/testimonials</loc>
+    <lastmod>2025-07-03</lastmod>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalfootcare.in/testimonials" />
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://royalfootcare.in/contact</loc>
+    <lastmod>2025-07-03</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalfootcare.in/contact" />
+  </url>
+
+</urlset>
