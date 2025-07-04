@@ -35,7 +35,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "PRAKASH M",
+    name: "Prakash M",
     feedback:
       "One of the best reflexology centers in Trichy. The therapists are well-trained and respectful. I could feel the difference in energy flow after just one visit.",
     rating: 5,
