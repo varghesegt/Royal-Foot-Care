@@ -47,7 +47,7 @@ export default function About() {
               Foot Reflexology & Wellness in Melapudur, Trichy
             </h3>
             <p className="text-gray-300 mb-6 text-lg">
-              At <strong>Royal Foot Care</strong>, we specialize in <strong>therapeutic foot reflexology</strong>, <strong>stress relief massage</strong>, and <strong>natural foot care</strong> for both men and women in Trichy. Our <strong>certified therapists</strong> have over 10+ years of experience in improving wellness naturally using ancient reflexology techniques.
+              At <strong>Royal Foot Care</strong>, we specialize in <strong>therapeutic foot reflexology</strong>, <strong>stress relief massage</strong>, and <strong>natural foot care</strong> for both men and women in Trichy. Our <strong>certified therapists</strong> use authentic reflexology techniques to relieve pain, reduce stress, and improve overall wellness naturally in a calming, professional environment.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="flex flex-col items-center text-center">
