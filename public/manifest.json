@@ -1,7 +1,14 @@
 {
   "short_name": "Royal Foot Care",
   "name": "Royal Foot Care – Foot Reflexology & Pedicure in Trichy",
-  "description": "Certified women's foot reflexology center in Melapudur, Trichy. Therapeutic pedicure, foot massage, and stress relief treatments.",
+  "description": "Certified women's foot reflexology and pedicure center in Melapudur, Trichy. Therapeutic massage, natural stress relief & hygiene-focused treatments.",
+  "lang": "en-IN",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0e0e0e",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,33 +18,40 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": "/?source=pwa",
-  "display": "standalone",
-  "theme_color": "#0e0e0e",
-  "background_color": "#ffffff",
-  "orientation": "portrait",
-  "scope": "/",
-  "lang": "en-IN",
   "shortcuts": [
     {
       "name": "Book Reflexology Session",
       "short_name": "Book Now",
       "url": "/#pricing",
-      "icons": [{ "src": "favicon.ico", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "logo192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Contact Royal Foot Care",
       "short_name": "Contact",
       "url": "/#contact",
-      "icons": [{ "src": "favicon.ico", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "logo192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
   "screenshots": [
