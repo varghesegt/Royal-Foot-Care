@@ -47,7 +47,7 @@ export default function Testimonials() {
     <section id="testimonials" className="bg-[#101010] text-white pt-16 pb-20 px-6 md:px-12">
       {/* ✅ SEO Meta & JSON-LD */}
       <Helmet>
-        <title>Client Testimonials | Royal Foot Care Trichy</title>
+        <title>Royal Foot Care – Foot Reflexology, Pedicure & Massage in Trichy</title>
         <meta
           name="description"
           content="Read real client reviews for Royal Foot Care in Trichy. 500+ happy clients. Certified reflexology and massage therapy for stress, pain relief, and wellness."

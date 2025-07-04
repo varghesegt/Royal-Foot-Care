@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       {/* 🔍 SEO Meta Tags */}
-      <Title>Foot Reflexology Trichy | Best Foot Massage, Pedicure & Spa – Royal Foot Care</Title>
+      <Title>Royal Foot Care – Foot Reflexology, Pedicure & Massage in Trichy</Title>
       <Meta name="description" content="Top-rated foot reflexology and foot massage center in Trichy. We offer therapeutic pedicures and spa services to relieve stress and promote wellness." />
       <Meta name="keywords" content="foot reflexology Trichy, foot massage Trichy, pedicure Trichy, women foot spa Trichy, foot therapy Tiruchirappalli, Royal Foot Care" />
       <Meta name="author" content="Royal Foot Care" />
