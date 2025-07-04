@@ -19,19 +19,25 @@ import ScrollToTopButton from './components/ScrollToTopButton'; // ✅ Scroll to
 function App() {
   return (
     <div className="bg-[#0e0e0e] text-white font-sans scroll-smooth">
-      {/* SEO Meta Tags */}
+      {/* ✅ SEO Meta Tags for Trichy */}
       <Helmet>
-        <title>Royal Foot Care | Foot Reflexology & Wellness in Ahmedabad</title>
+        <title>Royal Foot Care | Best Foot Reflexology & Wellness Spa in Trichy</title>
         <meta
           name="description"
-          content="Royal Foot Care offers expert foot reflexology, pedicure, and wellness services in Ahmedabad. Experience holistic healing with certified therapists."
+          content="Royal Foot Care in Trichy provides expert foot reflexology, therapeutic foot massage, and wellness spa services by certified therapists. Experience stress relief and rejuvenation today."
         />
         <meta
           name="keywords"
-          content="foot reflexology, foot care, wellness spa, Ahmedabad spa, pedicure, stress relief, Royal Foot Care"
+          content="foot reflexology Trichy, foot massage Trichy, pedicure Trichy, wellness spa Trichy, Royal Foot Care Trichy, reflexology center Trichy, women foot spa Trichy"
         />
         <meta name="author" content="Royal Foot Care" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Royal Foot Care - Trichy’s Best Reflexology & Wellness Spa" />
+        <meta property="og:description" content="Top-rated foot reflexology and wellness spa in Trichy. Professional therapists, stress relief treatments, and premium pedicure packages." />
+        <meta property="og:url" content="https://royalfootcare.in" />
+        <meta property="og:image" content="https://royalfootcare.in/logo192.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://royalfootcare.in/" />
       </Helmet>
 
       {/* Navigation Bar */}
