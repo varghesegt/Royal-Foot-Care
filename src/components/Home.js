@@ -11,13 +11,13 @@ const slides = [
   },
   {
     src: '/img1.webp',
-    title: 'Therapeutic Foot Massage in Trichy',
+    title: 'Therapeutic Foot Massage',
     description:
       'Relax and heal with expert foot massage therapy in Trichy — improves blood flow, relieves pain, and refreshes your body.',
   },
   {
     src: '/img11.webp',
-    title: 'Pedicure Spa for Women in Trichy',
+    title: 'Pedicure Spa',
     description:
       'Rejuvenate your feet with cleansing, exfoliation, and moisturizing pedicure services at Royal Foot Care, Trichy.',
   },
