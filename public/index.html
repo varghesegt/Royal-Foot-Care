@@ -1,79 +1,91 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0e0e0e" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e0e0e" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Favicons (required for mobile + desktop) -->
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon" />
-  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- ✅ Favicons for all platforms -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
 
-  <!-- Title & Primary SEO -->
-  <title>Royal Foot Care | Best Foot Reflexology, Spa & Pedicure in Trichy</title>
-  <meta name="title" content="Royal Foot Care | Best Foot Reflexology, Spa & Pedicure in Trichy" />
-  <meta name="description" content="Royal Foot Care is Trichy's top-rated reflexology and wellness center offering expert foot massage, pedicure, and natural pain relief therapies with certified therapists. Women-friendly & safe environment." />
-  <meta name="keywords" content="Foot Reflexology Trichy, Trichy Spa, Foot Massage Trichy, Royal Foot Care, Reflexology Near Me, Women Spa Trichy, Pain Relief Therapy, Trichy Pedicure, Natural Healing, Certified Reflexologist" />
-  <meta name="author" content="Royal Foot Care" />
-  <link rel="canonical" href="https://royalfootcare.in/" />
+    <!-- ✅ SEO Meta -->
+    <title>Royal Foot Care – Foot Reflexology, Pedicure & Massage in Trichy</title>
+    <meta name="title" content="Royal Foot Care – Foot Reflexology, Pedicure & Massage in Trichy" />
+    <meta
+      name="description"
+      content="Royal Foot Care is Trichy's top-rated foot reflexology and wellness center offering expert massage, pedicures, and stress relief with certified therapists. Women-friendly & safe."
+    />
+    <meta
+      name="keywords"
+      content="Foot Reflexology Trichy, Trichy Spa, Foot Massage Trichy, Royal Foot Care, Reflexology Near Me, Women Spa Trichy, Pain Relief Therapy, Trichy Pedicure"
+    />
+    <meta name="author" content="Royal Foot Care" />
+    <link rel="canonical" href="https://royalfootcare.in/" />
 
-  <!-- Open Graph / Facebook / WhatsApp -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://royalfootcare.in/" />
-  <meta property="og:title" content="Royal Foot Care - Trichy's #1 Reflexology & Wellness Center" />
-  <meta property="og:description" content="Experience the healing power of touch. Top-rated foot reflexology, massage & pedicure in Trichy. Women-friendly, certified therapists, 1000+ happy clients." />
-  <meta property="og:image" content="https://royalfootcare.in/og-cover.jpg" />
+    <!-- ✅ Open Graph (for Facebook/WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://royalfootcare.in/" />
+    <meta property="og:title" content="Royal Foot Care – Trichy's #1 Reflexology & Wellness Spa" />
+    <meta
+      property="og:description"
+      content="Top-rated foot reflexology, massage & spa in Trichy. Certified staff, relaxing environment, 1000+ happy clients. Visit Royal Foot Care today."
+    />
+    <meta property="og:image" content="https://royalfootcare.in/og-cover.jpg" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Royal Foot Care - Trichy Reflexology & Wellness" />
-  <meta name="twitter:description" content="Relax, Heal, and Rejuvenate in Trichy's best foot reflexology center. Natural stress and pain relief with certified staff." />
-  <meta name="twitter:image" content="https://royalfootcare.in/og-cover.jpg" />
+    <!-- ✅ Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Royal Foot Care – Reflexology & Spa Trichy" />
+    <meta
+      name="twitter:description"
+      content="Best foot reflexology and pedicure center in Trichy. Relax, heal and rejuvenate with our certified wellness experts."
+    />
+    <meta name="twitter:image" content="https://royalfootcare.in/og-cover.jpg" />
 
-  <!-- Manifest -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- ✅ Manifest (PWA support) -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-  <!-- Preloads for Performance -->
-  <link rel="preload" as="image" href="%PUBLIC_URL%/img1.webp" />
-  <link rel="preload" as="image" href="%PUBLIC_URL%/img3.webp" />
-  <link rel="preload" as="image" href="%PUBLIC_URL%/img11.webp" />
+    <!-- ✅ Preload images -->
+    <link rel="preload" as="image" href="%PUBLIC_URL%/img1.webp" />
+    <link rel="preload" as="image" href="%PUBLIC_URL%/img3.webp" />
+    <link rel="preload" as="image" href="%PUBLIC_URL%/img11.webp" />
 
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Royal Foot Care",
-      "image": "https://royalfootcare.in/img1.webp",
-      "url": "https://royalfootcare.in",
-      "telephone": "+91 79047 47979",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Ground Floor, Door No 6/I, Ramesh Building, Melapudur",
-        "addressLocality": "Tiruchirappalli",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "620001",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 10.805099,
-        "longitude": 78.685044
-      },
-      "openingHours": "Mo-Su 10:00-20:00",
-      "priceRange": "₹₹",
-      "description": "Royal Foot Care is the best reflexology and wellness center in Trichy offering holistic therapies, foot massage, pedicure and stress relief.",
-      "sameAs": [
-        "https://www.facebook.com/royalfootcare.in",
-        "https://www.instagram.com/royalfootcare.in"
-      ]
-    }
-  </script>
-</head>
-
+    <!-- ✅ JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Royal Foot Care",
+        "image": "https://royalfootcare.in/logo192.png",
+        "url": "https://royalfootcare.in",
+        "telephone": "+91 79047 47979",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ground Floor, Door No 6/I, Ramesh Building, Melapudur",
+          "addressLocality": "Tiruchirappalli",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "620001",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 10.805099,
+          "longitude": 78.685044
+        },
+        "openingHours": "Mo-Su 10:00-20:00",
+        "priceRange": "₹₹",
+        "description": "Royal Foot Care is the best reflexology and wellness center in Trichy offering holistic therapies, foot massage, pedicure and stress relief.",
+        "sameAs": [
+          "https://www.facebook.com/royalfootcare.in",
+          "https://www.instagram.com/royalfootcare.in"
+        ]
+      }
+    </script>
+  </head>
 
   <body class="bg-black text-white">
     <noscript>You need to enable JavaScript to run this app.</noscript>
