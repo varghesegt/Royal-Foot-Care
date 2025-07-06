@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Title, Meta, Link as HeadLink } from 'react-head';
+import { useRouter } from 'next/router'; // ← Add this line if using Next.js
 
 const slides = [
   {
@@ -25,6 +26,7 @@ const slides = [
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
+  const router = useRouter(); // ← For navigation
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -37,7 +39,7 @@ export default function Home() {
     <>
       {/* 🔍 SEO Meta Tags */}
       <Title>Royal Foot Care – Foot Reflexology, Pedicure & Massage in Trichy</Title>
-      <Meta name="description" content="Top-rated foot reflexology and foot massage center in Trichy. We offer therapeutic pedicures and spa services to relieve stress and promote wellness." />
+      <Meta name="description" content="Royal Foot Care in Trichy offers certified foot reflexology, pain relief massage, and pedicure spa services for men and women. Visit us in Melapudur today!" />
       <Meta name="keywords" content="foot reflexology Trichy, foot massage Trichy, pedicure Trichy, women foot spa Trichy, foot therapy Tiruchirappalli, Royal Foot Care" />
       <Meta name="author" content="Royal Foot Care" />
       <Meta property="og:title" content="Foot Reflexology & Pedicure Spa in Trichy | Royal Foot Care" />
@@ -79,10 +81,10 @@ export default function Home() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
-                initial={{ opacity: 0, scale: 1.04 }}
+                initial={{ opacity: 0, scale: 1.03 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.97 }}
-                transition={{ duration: 0.8 }}
+                transition={{ duration: 0.6 }}
                 className="absolute inset-0 w-full h-full"
               >
                 <img
@@ -92,23 +94,32 @@ export default function Home() {
                   decoding="async"
                   className="w-full h-full object-cover object-center transition-all duration-700 ease-in-out"
                 />
-                <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-4">
+                <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center px-4">
                   <motion.h1
                     className="text-4xl md:text-5xl font-bold text-white mb-4"
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.5 }}
                   >
                     {slides[current].title}
                   </motion.h1>
                   <motion.p
-                    className="text-lg md:text-xl text-gray-200 max-w-xl"
+                    className="text-lg md:text-xl text-gray-100 max-w-xl mb-6"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1, duration: 0.6 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
                   >
                     {slides[current].description}
                   </motion.p>
+                  <motion.button
+                    onClick={() => router.push('/plans')}
+                    className="px-6 py-3 text-lg font-semibold bg-rose-600 hover:bg-rose-700 text-white rounded-2xl shadow-xl transition-transform transform hover:scale-105"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.4 }}
+                  >
+                    Book Now
+                  </motion.button>
                 </div>
               </motion.div>
             </AnimatePresence>
