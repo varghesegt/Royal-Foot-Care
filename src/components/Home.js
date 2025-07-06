@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Title, Meta, Link as HeadLink } from 'react-head';
-import { useRouter } from 'next/router'; // ← Add this line if using Next.js
+import { useNavigate } from 'react-router-dom'; // ✅ Correct import for CRA
 
 const slides = [
   {
@@ -26,7 +26,7 @@ const slides = [
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
-  const router = useRouter(); // ← For navigation
+  const navigate = useNavigate(); // ✅ CRA navigation
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -76,7 +76,10 @@ export default function Home() {
 
       {/* 🖼 Hero Slideshow */}
       <main>
-        <section id="home" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-black">
+        <section
+          id="home"
+          className="relative min-h-screen flex items-center justify-center text-white overflow-hidden bg-black"
+        >
           <div className="absolute inset-0 z-0">
             <AnimatePresence mode="wait">
               <motion.div
@@ -112,7 +115,7 @@ export default function Home() {
                     {slides[current].description}
                   </motion.p>
                   <motion.button
-                    onClick={() => router.push('/plans')}
+                    onClick={() => navigate('/plans')}
                     className="px-6 py-3 text-lg font-semibold bg-rose-600 hover:bg-rose-700 text-white rounded-2xl shadow-xl transition-transform transform hover:scale-105"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
