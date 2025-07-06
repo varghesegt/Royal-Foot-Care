@@ -48,47 +48,36 @@ function App() {
         {/* Navigation Bar */}
         <Navbar />
 
-        {/* Routes for Navigation */}
+        {/* ✅ Single Route – SPA-style Full Page */}
         <Routes>
           <Route
             path="/"
             element={
-              <>
-                <main>
-                  <section id="home">
-                    <Home />
-                  </section>
-
-                  <section id="about">
-                    <About />
-                  </section>
-
-                  <section id="services">
-                    <Services />
-                  </section>
-
-                  <section id="benefits">
-                    <Benefits />
-                  </section>
-
-                  <section id="pricing">
-                    <Plans />
-                  </section>
-
-                  <section id="testimonials">
-                    <Testimonials />
-                  </section>
-
-                  <section id="contact">
-                    <Contact />
-                  </section>
-                </main>
-              </>
+              <main>
+                <section id="home">
+                  <Home />
+                </section>
+                <section id="about">
+                  <About />
+                </section>
+                <section id="services">
+                  <Services />
+                </section>
+                <section id="benefits">
+                  <Benefits />
+                </section>
+                <section id="pricing">
+                  <Plans />
+                </section>
+                <section id="testimonials">
+                  <Testimonials />
+                </section>
+                <section id="contact">
+                  <Contact />
+                </section>
+              </main>
             }
           />
-
-          <Route path="/plans" element={<Plans />} />
-          {/* Add more routes here if needed */}
         </Routes>
 
         {/* Floating Buttons */}

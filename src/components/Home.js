@@ -115,14 +115,20 @@ export default function Home() {
                     {slides[current].description}
                   </motion.p>
                   <motion.button
-                    onClick={() => navigate('/plans')}
-                    className="px-6 py-3 text-lg font-semibold bg-rose-600 hover:bg-rose-700 text-white rounded-2xl shadow-xl transition-transform transform hover:scale-105"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.4 }}
-                  >
-                    Book Now
-                  </motion.button>
+  onClick={() => {
+    const plansSection = document.getElementById('pricing');
+    if (plansSection) {
+      plansSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+  className="px-6 py-3 text-lg font-semibold bg-rose-600 hover:bg-rose-700 text-white rounded-2xl shadow-xl transition-transform transform hover:scale-105"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.4 }}
+>
+  Book Now
+</motion.button>
+
                 </div>
               </motion.div>
             </AnimatePresence>
